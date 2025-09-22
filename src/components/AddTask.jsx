@@ -1,3 +1,4 @@
+import { CirclePlus } from "lucide-react";
 import { useState } from "react";
 
 function AddTask({ onAddTaskSubmit }) {
@@ -30,8 +31,8 @@ function AddTask({ onAddTaskSubmit }) {
                     setDescription('');
                 }}
                 type="submit"
-                className="bg-slate-500 text-white px-4 py-2 rounded-md font-medium hover:bg-slate-500/85 transition">
-                Adicionar
+                className="bg-slate-500 text-white px-4 py-2 rounded-md font-medium hover:bg-slate-500/85 flex items-center justify-center">
+                Adicionar <CirclePlus className="text-white" style={{ width: '16px', height: '16px', margin: '3px' }} />
             </button>
         </div>
     )
