@@ -23,7 +23,7 @@ function AddTask({ onAddTaskSubmit }) {
             />
             <button
                 onClick={() => {
-                    if (title.trim() === '' || description.trim() === '') {
+                    if (!title.trim() || !description.trim()) {
                         return alert('Preencha todos os campos')
                     }
                     onAddTaskSubmit(title, description);
